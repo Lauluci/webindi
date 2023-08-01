@@ -76,10 +76,23 @@ p¨{
 } 
 .imagen{
 width:100%;
-height:100px;
+height:500px;
 background:rgb(220,220,220);
 border-radius:10px;
-box-sizing: border-box;
+
 padding:30px;
 margin-bottom:20px;    
+background-size:cover;
+background-position:center center;
+} 
+<div class="contenedor">
+  <div class="seccion1">
+    <!-- Contenido de la primera sección -->
+  </div>
   
+  <div class="seccion2">
+    <!-- Contenido de la segunda sección -->
+  
+ 
+</div>
+</div>
