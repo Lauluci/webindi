@@ -8,38 +8,36 @@ propiedad:valor;
 }
 */
 p{
-color:black;
+color:#17120c;
 }
 body
 {   background-image: linear-gradient(to right, #2f2418, #8c6d47);
     
 @font-face 
  font-family:'Birthday'
-src: url (FONT/Birthday.ttf);
-)
+src: url (FONT/Birthday.ttf)format('truetype');
+    
+@font-face 
+ font-family:'Lamarkie';
+src: url(FONT/Lamarkie.otf)format('opentype');
     }
 h1 {
- font-family: 'Birthday'
+ font-family: 'Birthday';
      
 }
 h1{
-    font-size: 150px;
-    
+     margin-left:470px;
+    font-size: 175px;   
 }
-@font-face 
- font-family:'Lamarkie'
-src: url (FONT/Lamarkie.ttf);
 
-    }
 h2{
- font-family: 'Lamarlie';
+ font-family: 'Lamarkie';
      
 }
 h2{
     font-size: 50px;
-    margin-right: 20px;
-    
-    padding:5px;
+    margin-left:520px;
+    padding:0px;
 
 }
 h1, h2 {
@@ -53,6 +51,7 @@ padding:30px;
 }
 nav {
   text-align: right;
+    font-family: 'Lamarkie'
 }
 nav ul{
 list-style-type:none;
@@ -60,10 +59,11 @@ margin-left: 20px;
 padding:0px;
 }
 nav ul li a{
-color:inherit;
+color:#17120c;
 text-decoration:none;
 text-transform:uppercase;
 font-weight:bold;
+    
 }
 nav ul li{
 display:inline-block;
@@ -71,6 +71,15 @@ display:inline-block;
 padding:5px;
 }
 
-   
-    
+p¨{
+    text-align:justify;
+} 
+.imagen{
+width:100%;
+height:100px;
+background:rgb(220,220,220);
+border-radius:10px;
+box-sizing: border-box;
+padding:30px;
+margin-bottom:20px;    
   
