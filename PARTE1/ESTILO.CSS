@@ -35,7 +35,7 @@ h2{
      
 }
 h2{
-    font-size: 50px;
+    font-size: 30px;
     margin-left:520px;
     padding:0px;
 
@@ -50,6 +50,7 @@ padding:30px;
     margin: 40px;
 }
 nav {
+    font-size: 10px;
   text-align: right;
     font-family: 'Lamarkie'
 }
@@ -69,6 +70,14 @@ nav ul li{
 display:inline-block;
     margin-left: 20px;
 padding:5px;
+}
+h3{
+  font-size: 25px; 
+    font-family: 'Lamarkie' 
+}
+h4{
+  font-size: 15px; 
+    font-family: 'Lamarkie' 
 }
 
 p{
