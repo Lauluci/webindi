@@ -71,7 +71,7 @@ display:inline-block;
 padding:5px;
 }
 
-p¨{
+p{
     text-align:justify;
 } 
 .imagen{
@@ -85,14 +85,22 @@ margin-bottom:20px;
 background-size:cover;
 background-position:center center;
 } 
-<div class="contenedor">
-  <div class="seccion1">
-    <!-- Contenido de la primera sección -->
-  </div>
-  
-  <div class="seccion2">
-    <!-- Contenido de la segunda sección -->
-  
- 
-</div>
-</div>
+footer{
+    list-style-type:none;
+    padding:30px;
+   text-decoration:none;
+text-transform:uppercase; 
+    text-align: right
+}
+
+li a {
+    color:#17120c;
+text-decoration:none;
+text-transform:uppercase;
+font-weight:bold;
+}
+footer li {
+    display:inline-block;
+    margin-left:30px;
+    
+}
