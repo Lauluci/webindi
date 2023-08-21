@@ -84,7 +84,7 @@ p{
     text-align:justify;
 } 
 .imagen{
-width:100%;
+width:80%;
 height:500px;
 background:rgb(220,220,220);
 border-radius:10px;
@@ -113,3 +113,69 @@ footer li {
     margin-left:30px;
     
 }
+/* esto es para que dependiendo del tamaño de la pantalla mantenga un tamaño la estructura y el margin auto es para que se ubique siempre en el medio del navegador*/
+header, footer, main{
+    max-width:2000px;
+    margin:auto;
+    /* la siguiente etique sirve para decir lo que le pasa al proyecto cuando superaciertas condiciones*/
+    @media only screen and (min-width: 600px){
+        article{
+            box-sizing: border-box;
+            display: inline-block;
+            width: 50%;
+            padding: 20%;
+            vertical-align: top;
+    }
+    }
+ @media only screen and (min-width: 900px){
+        article{
+            box-sizing: border-box;
+            display: inline-block;
+            width: 33%;
+            padding: 20%;
+            vertical-align: top;
+    }
+
+    /* existe una etiqueta que le dice a la estructura que no escale cuando pasa de moso pc a modo de movil se pone en la cabecera del html*/
+    video{
+        display:block;
+    }
+    #pancarta{
+        display:none;
+    }
+
+ 
+    #articulos{
+        padding-top:600px;
+    }
+    header{
+        position:relative;
+        z-index:1000;
+        background:none;
+    }
+}
+@media only screen and (max-width: 900px) {
+    
+   video{
+        display:none;
+    }
+    #pancarta{
+        display:block;
+    }
+    
+video{
+    width:100%;
+    border-radius:10px;
+}
+body{
+    background:url("");
+}
+video{
+    position:absolute;
+    width:100%;
+    left:0px;
+    top:0px;
+    border-radius:0px;
+}     
+}
+    
