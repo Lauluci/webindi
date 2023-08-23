@@ -18,7 +18,7 @@ body
 src: url (FONT/Birthday.ttf)format('truetype');
     
 @font-face 
- font-family:'Lamarkie';
+ font-family:'Lamarkie'
 src: url(FONT/Lamarkie.otf)format('opentype');
     }
 h1 {
@@ -115,7 +115,7 @@ footer li {
 }
 /* esto es para que dependiendo del tamaño de la pantalla mantenga un tamaño la estructura y el margin auto es para que se ubique siempre en el medio del navegador*/
 header, footer, main{
-    max-width:2000px;
+    max-width:1000px;
     margin:auto;
     /* la siguiente etique sirve para decir lo que le pasa al proyecto cuando superaciertas condiciones*/
     @media only screen and (min-width: 600px){
@@ -143,10 +143,8 @@ header, footer, main{
     #pancarta{
         display:none;
     }
-
- 
     #articulos{
-        padding-top:600px;
+        padding-top:400px;
     }
     header{
         position:relative;
@@ -164,18 +162,21 @@ header, footer, main{
     }
     
 video{
-    width:100%;
+    width:70%;
     border-radius:10px;
 }
-body{
-    background:url("");
-}
+    body{   
+        background:url("img/fondo1.jpg");
+    }
 video{
     position:absolute;
-    width:100%;
-    left:0px;
-    top:0px;
+    width:70%;
+  top: 50%; /* Coloca el elemento a la mitad vertical de su contenedor padre */
+  left: 50%; /* Coloca el elemento a la mitad horizontal de su contenedor padre */
+  transform: translate(-50%, -50%); /* Centra el elemento en ambas direcciones */
     border-radius:0px;
 }     
+main{
+    
 }
     
