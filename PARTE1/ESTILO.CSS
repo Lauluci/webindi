@@ -46,8 +46,7 @@ h1, h2 {
 
 header,main,footer{
 background:#8c6d47;
-padding:30px;
-    margin: 40px;
+padding:20px;
 }
 nav {
     font-size: 10px;
@@ -83,17 +82,53 @@ h4{
 p{
     text-align:justify;
 } 
+#pancarta{
+    width:100%;
+    height:300px;
+    background:rgb(220,220,220);
+    border-radius:10px;
+    box-sizing: border-box;
+    padding:30px;
+}
 .imagen{
-width:80%;
-height:500px;
+width:90%;
+height:300px;
 background:rgb(220,220,220);
 border-radius:10px;
-
 padding:30px;
 margin-bottom:20px;    
 background-size:cover;
 background-position:center center;
 } 
+#pancarta{
+    background:url("imagenes/luna.jpg");
+    background-size:cover;
+    background-position:center center;
+}
+.imagen{
+    background:url("imagenes/luna.jpg");
+    background-size:cover;
+    background-position:center center;
+}
+time{
+    font-size:10px;
+}
+article{
+    margin-top:50px;
+}
+#pancarta h3{
+    margin-top:100px;
+    color:white;
+    text-shadow:0px 3px 6px black;
+    font-size:40px;
+    margin-left:0px;
+}
+#pancarta h4{
+    color:white;
+    text-shadow:0px 3px 6px black;
+    font-size:20px;
+    margin-left:0px;
+}
 footer{
     list-style-type:none;
     padding:30px;
@@ -118,25 +153,24 @@ header, footer, main{
     max-width:1000px;
     margin:auto;
     /* la siguiente etique sirve para decir lo que le pasa al proyecto cuando superaciertas condiciones*/
-    @media only screen and (min-width: 600px){
-        article{
-            box-sizing: border-box;
-            display: inline-block;
-            width: 50%;
-            padding: 20%;
-            vertical-align: top;
+    /* Estilos para pantallas pequeñas */
+   @media only screen and (min-width: 600px) {
+    article{
+        box-sizing:border-box;
+        display:inline-block;
+        width:50%;
+        padding:20px;
+        vertical-align:top;
     }
+}
+@media only screen and (min-width: 900px) {
+    article{
+        box-sizing:border-box;
+        display:inline-block;
+        width:33%;
+        padding:20px;
+        vertical-align:top;
     }
- @media only screen and (min-width: 900px){
-        article{
-            box-sizing: border-box;
-            display: inline-block;
-            width: 33%;
-            padding: 20%;
-            vertical-align: top;
-    }
-
-    /* existe una etiqueta que le dice a la estructura que no escale cuando pasa de moso pc a modo de movil se pone en la cabecera del html*/
     video{
         display:block;
     }
@@ -144,7 +178,7 @@ header, footer, main{
         display:none;
     }
     #articulos{
-        padding-top:400px;
+        padding-top:600px;
     }
     header{
         position:relative;
@@ -154,7 +188,7 @@ header, footer, main{
 }
 @media only screen and (max-width: 900px) {
     
-   video{
+    video{
         display:none;
     }
     #pancarta{
@@ -162,21 +196,24 @@ header, footer, main{
     }
     
 video{
-    width:70%;
+    width:80%;
     border-radius:10px;
 }
-    body{   
-        background:url("img/fondo1.jpg");
-    }
+body{
+    background:url("img/fondo1.jpg");
+}
 video{
     position:absolute;
-    width:70%;
-  top: 50%; /* Coloca el elemento a la mitad vertical de su contenedor padre */
-  left: 50%; /* Coloca el elemento a la mitad horizontal de su contenedor padre */
-  transform: translate(-50%, -50%); /* Centra el elemento en ambas direcciones */
-    border-radius:0px;
-}     
+    width:100%;
+    left:0px;
+    top:0px;
+    border-radius:0px;   
+}
+     .video-container {
+  width: 80%; /* Establece el ancho del contenedor al 80% del ancho de la ventana */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  border: 1px solid #ccc; /* Agrega un borde para visualizar el contenedor */
+}
 main{
     
 }
-    
